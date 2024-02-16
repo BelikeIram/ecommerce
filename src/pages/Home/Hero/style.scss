@@ -1,0 +1,30 @@
+.main-hero{
+    position: relative;
+
+    .hero-detail{
+        position: absolute;
+        z-index: 1;
+        width: 40%;
+        top: 35%;
+        bottom: 50%;
+        padding-left: 2rem;
+
+        .hero-detail__header{
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: 5px;
+            font-family: 'Cedarville Cursive', cursive;
+            color: var(--main-color);
+        }
+    }
+
+    .swipe-btn{
+        display: flex;
+
+        button{
+            background: pink;
+            color: White;
+            font-weight: 700;
+        }
+    }
+}

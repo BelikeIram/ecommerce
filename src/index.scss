@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // Main color 
+  --main-color : rgb(164,48,109);
+  --second-main-color : rgb(236 168 207);
+  --primary-bg: #fce7eb7a;
+  --secondary-bg : #ffffff;
+
+  // Text color
+  --product-text : rgb(139, 139, 163);
+  --discount : rgb(3, 141, 99);
+  --free-delivery : rgb(255, 255, 255);
+
+  // Font size
+  --bigger-text : 20px;
+  --generic-text : 17px;
+  --small-text : 14px;
+
+
+  --box-shadow : rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  position: relative;
+}
+.main-parent{
+  width: 100vw;
+}
+.main-parent.cart-shown{
+  overflow: hidden;
+  height: 100vh;
+}
+
+.parent{
+  padding-top: 75px;
+  padding-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-bg);
+}
+
+
+#cart-component{
+
+  .cart-parent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #0000004d;
+    z-index: -1;
+  
+  
+    &.active{
+      z-index: 100;
+        .cart-comp{
+          display: block;
+          transform: translateX(0);
+         
+        }
+    }
+
+    .cart-comp{
+      display: none;
+      position: absolute;
+      transform: translateX(500px);
+      height: 100vh;
+      background: white;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      color: var(--main-color);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      transition: transform 0.2s linear ;
+      overflow: auto;
+
+      .header{
+        position:sticky;
+        top: 0;
+        z-index: 101;
+        width: 100%;
+        background: white;
+      }
+      .cart-scroll{
+        overflow: scroll;
+      }
+      .cart-body{
+        margin-top: 1rem;
+      }
+      .cart-footer{
+        background: white;
+        height: 85px;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        bottom: 0;
+
+      }
+      }
+       
+      h3{
+        font-size: 1.6rem;
+      }
+      h5{
+        font-size: 1.1rem;
+      }
+    
+      .empty-cart{
+        border-radius: 10px;
+        border: 4px solid #ffffff;
+      }
+    
+      .back{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    
+        svg{
+          font-size: 1.8rem;
+        }
+    
+      }
+  }
+
+}

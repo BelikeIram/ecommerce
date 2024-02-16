@@ -1,0 +1,23 @@
+.nt-fnd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 90px);
+    .err-msg{
+        text-align: center;
+    }
+    .field{
+      
+        .field-btn{
+            padding: 0.4rem;
+            border-radius: 14px;
+            border: 2px solid var(--main-color);
+            background-color: var(--main-color);
+            color: white;
+            text-transform: capitalize;
+            font-weight: 800;
+            font-size: 1.3rem;
+            text-decoration: none;
+        }
+    }
+}

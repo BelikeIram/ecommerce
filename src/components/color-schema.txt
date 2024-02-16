@@ -1,0 +1,25 @@
+main  color = rgb(164,48,109);
+second color = rgb(235,168,236)
+
+third color = 
+
+buttons, links, icons ,logo  == main color
+active, hover links, placeholder, signup page, login page,  = second color 
+background color = third color , forth color odd and even
+
+font style 
+logo = @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap'); font-family: 'Cedarville Cursive', cursive;
+text = @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Playfair+Display&display=swap');font-family: 'Cedarville Cursive', cursive;
+font-family: 'Playfair Display', serif;
+
+text color 
+heading = Main color
+product text = rgb(139, 139, 163);
+discount = rgb(3, 141, 99)
+free delivery = rgb(255, 255, 255)
+
+font size
+placeholder = 17px;
+login = 17px
+product name = 14px
+heading = 20px

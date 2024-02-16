@@ -1,0 +1,26 @@
+.category__header{
+   font-size: 2rem;
+   color: var(--main-color);
+   font-weight: 800;
+   text-transform: capitalize;
+   margin-bottom: 1rem;
+}
+.product-skeleton{
+   background-color: #7b7676;
+
+   .product-skeleton-img{
+      height: 150px; /* Adjust based on your design */
+      width: 100%;
+      background-color: #ddd;
+      border-radius: 4px;
+      margin-bottom: 10px;
+   }
+
+   .skeleton-text {
+      height: 15px;
+      width: 80%;
+      background-color: rgb(37, 26, 26);
+      margin-bottom: 5px;
+      border-radius: 4px;
+    }
+}
